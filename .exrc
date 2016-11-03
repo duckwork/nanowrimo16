@@ -1,9 +1,10 @@
 setl spell
 setl nocursorline
 setl nuw=10
+setl noautoindent
+setl tw=60
 
 setl stl=%2n%{mode()}\ %q%f\ %{Status_wordcount()}\ %m%=%l/%L\ %-4P
-
 function! Status_wordcount(...)
   if ( a:0 > 0 )
     let format = a:1
